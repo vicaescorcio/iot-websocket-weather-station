@@ -88,6 +88,7 @@
   	$("#bigMap").attr("src",urlmap );
     $(".hideme2").animate({'opacity':'1'},2000);
     $(".map").animate({'opacity':'1'},2500);
+    $('.map iframe').css({'pointer-events':'all'});
   	console.log(temp);
 
   }

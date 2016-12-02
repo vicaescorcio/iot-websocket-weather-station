@@ -54,6 +54,9 @@ body{
     height: 500px;
      opacity: 0;
 }
+.map iframe {
+    pointer-events: none;
+}
 
 @media(max-width:768px) {
     .map {
