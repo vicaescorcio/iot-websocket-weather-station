@@ -2,9 +2,9 @@
     //by Matthew Bordignon @bordignon on twitter.
     var $connectionrefuse = $('<span class ="red-text orbitron" ><i class="material-icons">error</i> Impossível conectar!</span>');
     var $connectionlost = $('<span class ="red-text orbitron" ><i class="material-icons">error</i> Conexão perdida!</span>');
-
+    var $broker = "m2m.eclipse.org/ws"
     var wsbroker = "test.mosquitto.org";  //mqtt websocket enabled broker
-    var wsport = 8080 // port for above
+    var wsport = 8080; // port for above
     var client = new Paho.MQTT.Client(wsbroker, wsport,
         "myclientid_" + parseInt(Math.random() * 100, 10));
     client.onConnectionLost = function (responseObject) {
@@ -70,13 +70,15 @@
   }
 
   function stationData(message){
-  	var data = message.split('/');
-  	var temp = data[0];
-  	var humi = data[1];
-  	var part = data[2];
-  	var uv   = data[3];
-  	var long = "77.923029";
+  	var data = message.split(',');
+  	
+  	
   	var lat  = "10.305385";
+    var long = "77.923029";
+    var uv   = data[3]; 
+    var temp = data[4];
+    var humi = data[5];
+    var part = data[6];
     
 
     urlmap = "https://maps.google.com/maps?q="+ lat +","+long+"&z=14&output=embed&iwloc=0"
