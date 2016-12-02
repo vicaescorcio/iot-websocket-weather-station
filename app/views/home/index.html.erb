@@ -1,0 +1,152 @@
+<div class="container">
+ <div class="row ">
+
+   <div class="col s12 m12 l12 center">
+     <a href="#" class="brand-logo center"><%=image_tag 'weather-logo3.png', class: 'responsive-img image-main  '%></a>
+    <h1 class="orbitron grey-text text-darken-2 ">Como tá o clima?</h1>
+   	
+   </div>
+   <div class="row">
+     <div class="col s12 m10 l10">
+      <div class="input-field">
+       <select id="broker" name="brokerName">
+        <option value="1">test.mosquitto.org</option>
+       </select> 
+      <label>Broker</label>
+     </div>
+    </div>
+     <div class="col s2  m2 l2 ">
+     <div class="input-field">
+       <a class="connect btn waves-effect waves-light light-blue lighten-2" onclick = "connect();">
+         
+         <span class="orbitron">Conectar ao Broker</span>
+       </a>
+       </div>
+     </div>
+   </div>
+
+
+
+
+
+   <div class="row hideme">
+     
+    <div class="col s12 m10 l10">
+     <div class="input-field">
+       <select id="station" name="stationName">
+        <option value="/World">Estação 1</option>
+        <option value="2">Estação 2</option>
+       </select> 
+      <label>Estação</label>
+     </div>
+    </div>
+    
+
+    <div class="col s2 m2 l2">
+     <div class="input-field">
+      <a href="#sensor" class="btn waves-effect waves-light" onclick = "subscribe('/World');">
+         
+         <span class="orbitron">Conectar a estação!</span>
+       </a>
+     </div>
+    </div>
+   
+    
+  </div>
+
+
+
+  
+  
+ 
+
+</div>
+  <div class="row">
+   	<div class="col s12 m3 l3 center tooltipped" data-position="top" data-delay="50" data-tooltip="UV">
+   		<%=image_tag 'uv-icon.png', class: 'responsive-img  image-icon '%>
+     
+   	</div>
+   	<div class="col s12 m3 l3 center tooltipped " data-position="top" data-delay="50" data-tooltip="Umidade do ar">
+   		<%=image_tag 'humidity-icon2.png', class: 'responsive-img  image-icon '%>
+     
+   	</div>
+   	<div class="col s12 m3 l3 center tooltipped " data-position="top" data-delay="50" data-tooltip="Temperatura">
+   		<%=image_tag 'thermometer-icon.png', class: 'responsive-img  image-icon '%>
+     
+   	</div>
+   	<div class="col s12 m3 l3 center tooltipped" data-position="top" data-delay="50" data-tooltip="Partículas no ar">
+   		<%=image_tag 'particles-icon.png', class: 'responsive-img  image-icon '%>
+       
+   	</div>
+  </div>
+  <div id="sensor" class="row hideme2">
+   <div class="col s12 m3 l3 center">
+       <span class="orbitron grey-text text-darken-2 uv"> sdfsadf amor</span> 
+   </div>
+   <div class="col s12 m3 l3 center">
+       <span class="orbitron grey-text text-darken-2 humi"> sdfsadf amor</span> 
+   </div>
+   <div class="col s12 m3 l3 center">
+       <span class="orbitron grey-text text-darken-2 temp"> sdfsadf amor</span> 
+   </div>
+   <div class="col s12 m3 l3 center">
+       <span class="orbitron grey-text text-darken-2 part"> sdfsadf amor</span> 
+   </div>
+    
+  </div>
+ 	
+</div>
+
+
+<section id="contact" class="map ">
+  <iframe id="bigMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31850.466333142867!2d-38.57561223251674!3d-3.7428619257204643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bdc62c8ba8f%3A0x9267767abebdb982!2sDepartamento+de+Engenharia+de+Produ%C3%A7%C3%A3o+Mec%C3%A2nica+UFC!5e0!3m2!1spt-BR!2sbr!4v1474461603668" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+  <br />
+    <small>
+      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31850.466333142867!2d-38.57561223251674!3d-3.7428619257204643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74bdc62c8ba8f%3A0x9267767abebdb982!2sDepartamento+de+Engenharia+de+Produ%C3%A7%C3%A3o+Mec%C3%A2nica+UFC!5e0!3m2!1spt-BR!2sbr!4v1474461603668"></a>
+    </small>
+  <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+</section>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

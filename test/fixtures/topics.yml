@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  station: MyString
+  sensor: MyString
+  location: MyString
+
+two:
+  station: MyString
+  sensor: MyString
+  location: MyString

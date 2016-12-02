@@ -1,0 +1,64 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require materialize.css
+ *= require custom-fonts.css.scss
+ */
+
+
+
+ .text-shadow{
+ 	text-shadow: 2px 2px black;
+ }
+ .orbitron{
+ 	font-family: 'Exo';
+ 	color:white;
+ }
+
+.image-logo{
+	width: 70px;
+	height: 70px;
+}
+.image-icon{
+	width: 100px;
+	height: 100px;
+}
+.image-main{
+	width: 140px;
+	height: 140px;
+}
+
+body{
+	background-image: url("background3.jpg");
+}
+.hideme{
+	opacity: 0;
+}
+.hideme2{
+	opacity: 0;
+}
+/* Map */
+
+.map {
+    height: 500px;
+     opacity: 0;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+
